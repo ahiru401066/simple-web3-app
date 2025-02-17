@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+pymysql  # MySQLと接続するためのライブラリ
+sqlalchemy  # ORMを使う場合
