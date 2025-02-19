@@ -2,7 +2,7 @@
 FROM python:3.11
 
 # 作業ディレクトリを設定
-WORKDIR /app
+WORKDIR /app/backend
 
 # 依存関係をコピー
 COPY requirements.txt ./

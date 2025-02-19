@@ -1,7 +1,14 @@
 services:
   frontend:
     build: ./frontend
+    image: frontend-image
     container_name: frontend-container
+    ports:
+      - "5137:5137"
+    volumes:
+      - ./frontend:/app/frontend
+    environment:
+      - NODE_ENV=development
 
   backend:
     build: ./backend
@@ -10,7 +17,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./:/app
+      - ./backend:/app/backend
     depends_on:
       - db
 
