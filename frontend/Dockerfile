@@ -6,4 +6,8 @@ WORKDIR /app/frontend
 # プロジェクト初期でReactをダウンロードするとき
 # RUN npm create vite@latest
 
-CMD ["sh"]
+
+WORKDIR /app/frontend/sample-app
+
+# CMD ["sh"]
+CMD ["npm", "run", "dev"]
