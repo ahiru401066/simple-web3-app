@@ -44,6 +44,7 @@ volumes:
 
 networks:
   front-back:
-    drive: bridge
+    name: front-back
+    driver: bridge
   # back-db:
-  #   drive: bridge
+  #   driver: bridge
